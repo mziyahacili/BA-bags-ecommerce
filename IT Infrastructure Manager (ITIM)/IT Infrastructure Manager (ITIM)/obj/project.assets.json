@@ -434,11 +434,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mziya\\source\\repos\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM).csproj",
+      "projectUniqueName": "C:\\Work\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM).csproj",
       "projectName": "IT Infrastructure Manager (ITIM)",
-      "projectPath": "C:\\Users\\mziya\\source\\repos\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM).csproj",
+      "projectPath": "C:\\Work\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM).csproj",
       "packagesPath": "C:\\Users\\mziya\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mziya\\source\\repos\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\obj\\",
+      "outputPath": "C:\\Work\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\IT Infrastructure Manager (ITIM)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
