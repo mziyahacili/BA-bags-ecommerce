@@ -1,10 +1,10 @@
-# IT Infrastructure Manager (ITIM)
+IT Infrastructure Manager (ITIM)
 
-## Project Overview
+Project Overview
 
 The IT Infrastructure Manager (ITIM) is a comprehensive web application designed to streamline the management of IT infrastructure within organizations. It provides a centralized platform for monitoring and managing various IT assets, incidents, services, and user access.
 
-## Key Features
+Key Features
 
 - **User Management**: Administrators can create and manage user accounts with different permission levels to ensure secure access to the system.
 - **Server Monitoring**: Users can track the status and performance of servers, enabling proactive management and minimizing downtime.
@@ -21,10 +21,4 @@ The ITIM project aims to enhance the efficiency of IT operations, providing tool
 - **Frontend**: React
 - **Database**: SQL Server with Entity Framework Core
 
-## Getting Started
 
-To set up the ITIM project locally, follow the instructions in the documentation.
-
----
-
-This README serves as a foundational introduction to the IT Infrastructure Manager project. Feel free to modify it as your project evolves!
