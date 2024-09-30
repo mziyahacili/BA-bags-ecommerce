@@ -1,0 +1,6 @@
+@IT_Infrastructure_Manager__ITIM__HostAddress = http://localhost:5024
+
+GET {{IT_Infrastructure_Manager__ITIM__HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
