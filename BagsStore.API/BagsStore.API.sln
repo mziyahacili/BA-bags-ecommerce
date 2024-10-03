@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BagsStore.API", "BagsStore.API\BagsStore.API.csproj", "{841DED76-81DB-4050-A1E8-74DCB67993EC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BagsStore.Core", "BagsStore.Core\BagsStore.Core.csproj", "{9DF54670-8A55-4D35-BAB5-5124C1A4EB4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{841DED76-81DB-4050-A1E8-74DCB67993EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{841DED76-81DB-4050-A1E8-74DCB67993EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{841DED76-81DB-4050-A1E8-74DCB67993EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{841DED76-81DB-4050-A1E8-74DCB67993EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DF54670-8A55-4D35-BAB5-5124C1A4EB4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DF54670-8A55-4D35-BAB5-5124C1A4EB4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DF54670-8A55-4D35-BAB5-5124C1A4EB4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DF54670-8A55-4D35-BAB5-5124C1A4EB4E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7B7EE035-83A1-4E0F-92F8-33624539E466}
+	EndGlobalSection
+EndGlobal
