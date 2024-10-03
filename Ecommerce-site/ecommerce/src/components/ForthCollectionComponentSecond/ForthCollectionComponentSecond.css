@@ -1,0 +1,35 @@
+.forth-second-collection-component {
+  display: flex;
+  width: 100%;
+  max-width: 1400px;
+  margin: auto;
+  background-color: #EEEAE5;
+}
+
+.resort-collection-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.forth-second-collection-image-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.forth-second-collection-image-link {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.forth-second-collection-image-link img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}

@@ -1,0 +1,47 @@
+.service-section {
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+}
+
+.service-section h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.service-section h2 span {
+  font-style: italic;
+  color: #4a4a4a;
+}
+
+.service-container {
+  display: flex;
+  justify-content: space-evenly; /* Центрирует элементы по горизонтали */
+  align-items: center;
+  gap: 20px; /* Добавляет пространство между элементами */
+}
+
+.service-item {
+  text-align: center;
+  max-width: 200px;
+  padding: 0 20px; /* Добавляет отступы для разделительных линий */
+  position: relative; /* Для позиционирования разделительной линии */
+}
+
+.service-item img {
+  max-width: 100px;
+  margin-bottom: 10px;
+  margin: auto;
+}
+
+.service-item p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+}
+
+.service-item a {
+  color: #b24823;
+  text-decoration: none;
+  font-size: 0.9em;
+}
+

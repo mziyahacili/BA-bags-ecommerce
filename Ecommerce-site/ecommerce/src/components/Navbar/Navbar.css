@@ -1,0 +1,150 @@
+/* ba-navbar.css */
+.ba-navbar {
+    width: 100%;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    position: fixed; /* Чтобы навбар оставался вверху */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #F7F5F1; /* Или любой другой фон */
+    z-index: 1000; 
+}
+
+
+.ba-navbar.show {
+    transform: translateY(0); /* Показывать навбар */
+    opacity: 1;
+}
+
+.ba-navbar.hide {
+    transform: translateY(-100%); /* Скрыть навбар вверх */
+    opacity: 0;
+}
+
+.ba-navbar-statusbar {
+    background: #EEEAE5;
+    font-size: 15px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: center;
+    padding: 7px 20px;
+    height: 32px;
+    width: 100%;
+}
+
+
+.ba-navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px 15px 40px;
+    background-color: #F7F5F1;
+  }
+  
+  .ba-navbar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex: 2;
+}
+
+
+.ba-navbar-icons {
+  flex: 1;
+  display: flex;
+  gap: 10px;
+}
+
+
+  
+  
+.ba-navbar-search {
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; /* Выравнивание по вертикали */
+    background-color: transparent; /* Прозрачный фон */
+    padding: 0 10px;
+}
+
+.ba-navbar-search:hover .ba-navbar-input::placeholder {
+    color: #B57841; /* Цвет при наведении */
+}
+  
+.ba-navbar-input {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+
+.ba-menu-ribbon {
+    width: 100%;
+    height: 8px;
+    background-color: #C3B0A5;
+    border-top: 2px solid #B57841;
+    border-bottom: 2px solid #B57841;
+}
+
+
+.ba-navbar-logo img {
+    height: 70px;
+    margin: 10px auto -17px auto;
+}
+
+.ba-navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 5px 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.ba-navbar-item {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.ba-navbar-item:first-child a {
+    color: #B57841;
+}
+  
+
+.ba-navbar-item a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.5s, text-decoration 0.5s;
+}
+
+.ba-navbar-item a:hover {
+    color: #B57841;
+}
+
+.ba-navbar-icon {
+    display: flex;
+    align-items: center;
+}
+
+.ba-navbar-icon img {
+  width: 17px; /* Adjust size as needed */
+  height: 17px;
+}
+
+
+
+.navbar.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }

@@ -1,0 +1,37 @@
+.popular {
+    padding: 100px 0 200px 0px; /* Увеличенные отступы для всей секции */
+}
+
+.popular-header {
+    margin-bottom: 40px; /* Увеличенный отступ снизу для заголовка и текста */
+    text-align: center; /* Центрирование текста */
+}
+  
+  .popular-header h2 {
+    font-size: 2.5rem; /* Увеличенный размер заголовка */
+    margin-bottom: 20px; /* Увеличенный отступ снизу заголовка */
+  }
+  
+  .popular-header p {
+    font-size: 1.2rem; /* Размер текста */
+    color: #555; /* Цвет текста */
+    margin: 20px auto 0; /* Увеличение отступа сверху для спуска на новую строку */
+    max-width: 600px; /* Максимальная ширина текста */
+    line-height: 1.5; /* Высота строки для лучшей читаемости */
+  }
+
+
+
+
+/* .popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.popular-item{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+} */
