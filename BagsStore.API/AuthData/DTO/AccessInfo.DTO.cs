@@ -1,6 +1,6 @@
 ﻿namespace AuthData.DTO;
 
-public record AccessInfo_DTO(
+public record AccessInfoDTO(
     string email,
     string accessToken,
     string refreshToken,

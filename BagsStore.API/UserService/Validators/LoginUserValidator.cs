@@ -7,11 +7,11 @@ public class LoginUserValidator : AbstractValidator<LoginDTO>
 {
     public LoginUserValidator()
     {
-        RuleFor(x => x.Username)
+        RuleFor(x => x.Email)
             .NotEmpty()
             .WithMessage("Username is required")
-            .Matches(RegexPatterns.usernamePattern)
-            .When(x => x.Username != null);
+            .Matches(RegexPatterns.emailPattern)
+            .When(x => x.Email != null);
 
         RuleFor(x => x.Password)
             .NotEmpty()

@@ -1,3 +1,3 @@
 ﻿namespace AuthData.DTO;
 
-public record Role_DTO(string name);
+public record RoleDTO(string name);

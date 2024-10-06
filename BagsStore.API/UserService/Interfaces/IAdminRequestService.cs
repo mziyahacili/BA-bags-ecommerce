@@ -8,5 +8,5 @@ namespace UserService.Interfaces;
 
 public interface IAdminRequestService
 {
-    public Task<LoginResponse_DTO> CheckRequestAsync(AccessInfo_DTO accessInfo, HttpContext context);
+    public Task<LoginResponseDTO> CheckRequestAsync(AccessInfoDTO accessInfo, HttpContext context);
 }

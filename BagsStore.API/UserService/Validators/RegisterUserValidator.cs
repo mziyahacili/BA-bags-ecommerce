@@ -7,11 +7,11 @@ public class RegisterUserValidator : AbstractValidator<RegisterDTO>
 {
     public RegisterUserValidator()
     {
-        RuleFor(x => x.Username)
+        RuleFor(x => x.Email)
             .NotEmpty()
             .WithMessage("Username is required")
-            .Matches(RegexPatterns.usernamePattern)
-            .When(x => x.Username != null);
+            .Matches(RegexPatterns.emailPattern)
+            .When(x => x.Email != null);
 
         RuleFor(x => x.Email)
             .NotEmpty()
@@ -23,7 +23,7 @@ public class RegisterUserValidator : AbstractValidator<RegisterDTO>
             .NotEmpty()
             .WithMessage("Password is required")
             .Matches(RegexPatterns.passwordPattern)
-            .NotEqual(x => x.Username)
+            .NotEqual(x => x.Email)
             .When(x => x.Password != null);
 
         RuleFor(x => x.ConfirmPassword)
