@@ -1,26 +1,20 @@
 import React from 'react';
-import './CSS/Login.css'
+import './CSS/Login.css';
 
-function Login() {
+function Login({ onClose }) {
   return (
-    <div className='login'>
-
-        <div className="login-container">
-            <h1>Sign Up</h1>
-            <div className="login-fields">
-                <input type="text" placeholder='Your Name'/>
-                <input type="text" placeholder='Email Address'/>
-                <input type="text" placeholder='Password'/>
-            </div>
-            <button>Continue</button>
-            <p className='login-loginquestion'>Already have an account? <span>Login</span> </p>
-            <div className="login-agree">
-                <input type="checkbox" name='' id=''/>
-                <p>By continuing, i agree to the terms of use & privacy policy</p>
-            </div>
+    <div className="login">
+      <div className="login-container">
+        <button className="close-button" onClick={onClose}>✖</button>
+        <h1>My Bags</h1>
+        <p>Please enter your email address to login or create a new profile</p>
+        <div className="login-fields">
+          <label htmlFor="email">* Email:</label>
+          <input type="email" id="email" placeholder='Email Address' required />
+          <button type="submit" className="login-button">Continue</button>
         </div>
-    
-
+        <span>* Required fields</span>
+      </div>
     </div>
   );
 }
