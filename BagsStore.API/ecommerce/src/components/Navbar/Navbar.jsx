@@ -12,12 +12,16 @@ import searchIcon from '../Assets/Icons/search.png';
 import searchIconHover from '../Assets/Icons/searchhover.png';
 import Login from '../../Pages/Login'; // Подключаем компонент логина
 import { useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 
 const Navbar = () => {
     const [hoverCart, setHoverCart] = useState(false);
     const [hoverUser, setHoverUser] = useState(false);
     const [hoverWishlist, setHoverWishlist] = useState(false);
     const [hoverSearch, setHoverSearch] = useState(false);
+
+    const location = useLocation();
+    const [isFixed, setIsFixed] = useState(true);  // Для контроля позиции fixed
 
     const [isLoginPopupVisible, setLoginPopupVisible] = useState(false);
 
@@ -37,6 +41,20 @@ const Navbar = () => {
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
     }, [lastScrollTop]);
+
+
+    useEffect(() => {
+        if (location.pathname === '/') {
+            setIsFixed(true); // Если на главной странице, фиксируем навбар
+        } else {
+            setIsFixed(false); // На других страницах навбар не фиксирован
+        }
+    }, [location.pathname]);
+
+
+    const toggleNavbarVisibility = () => {
+        setIsNavbarVisible(prevState => !prevState);
+    };
 
     useEffect(() => {
         if (isLoginPopupVisible) {
@@ -67,7 +85,7 @@ const Navbar = () => {
 
 
     return (
-        <nav className={`ba-navbar ${isNavbarVisible ? 'show' : 'hide'}`}>
+        <nav className={`ba-navbar ${isFixed ? 'fixed' : ''} ${isNavbarVisible ? 'show' : 'hide'}`}>
             {/* Твой навбар */}
             <div className="ba-navbar-logo">
                 <Link to="/">
@@ -128,16 +146,7 @@ const Navbar = () => {
             </div>
 
             <>
-            <nav className={`ba-navbar ...`}>
-                {/* Остальной контент навбара */}
-                <Link
-                    to="/login"
-                    className="ba-navbar-icon"
-                    onClick={handleUserIconClick}
-                >
-                    <img src={hoverUser ? userIconHover : userIcon} alt="User" />
-                </Link>
-            </nav>
+            
 
             {/* Затемняющий фон */}
             <div className={`overlay ${isLoginPopupVisible ? 'show' : ''}`}></div>
