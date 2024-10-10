@@ -15,7 +15,7 @@ export default function ShopCategory(props) {
       </div>
       <div className="shopcategory-indexSort">
         <p>
-          <span>Showing 1-12</span> out of 36 products
+          Products (99)
         </p>
         <div className="shopcategory-sort">
           Sort by <img src={dropdown_icon} alt="Sort Icon" />
