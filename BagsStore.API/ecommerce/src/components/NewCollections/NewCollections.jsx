@@ -15,6 +15,8 @@ export default function NewCollections() {
             id={item.id}
             name={item.name}
             image={item.image}
+            new_price={item.new_price}
+            imageHover={item.imageHover}
             index={i} 
           />
         ))}

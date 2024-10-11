@@ -32,20 +32,21 @@ export default function Item(props) {
 
   return (
     <div className="item" ref={itemRef}>
-      <Link to={`/product/${props.id}`}>
-        <img src={props.image} alt={props.name} />
-      </Link>
-      <div className="item-details">
-        <p>{props.name}</p>
-        <div className="item-prices">
-          <div className="item-price-new">
-            {props.new_price}
-          </div>
-          <div className="item-price-old">
-            {props.old_price}
-          </div>
-        </div>
+  <Link to={`/product/${props.id}`}>
+    {/* Первое изображение (по умолчанию отображается) */}
+    <img src={props.image} alt={props.name} />
+    {/* Второе изображение (появляется при наведении) */}
+    <img src={props.imageHover} alt={props.name + ' hover'} />
+  </Link>
+  <div className="item-details">
+    <p>{props.name}</p>
+    <div className="item-prices">
+      <div className="item-price-new">
+        {props.new_price} ₼
       </div>
     </div>
+  </div>
+</div>
+
   );
 }
