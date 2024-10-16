@@ -125,14 +125,6 @@ const Navbar = () => {
                         <img src={hoverUser ? userIconHover : userIcon} alt="User" />
                     </div>
 
-                    <Link
-                        to="/login"
-                        className="ba-navbar-icon"
-                        onMouseEnter={() => setHoverWishlist(true)}
-                        onMouseLeave={() => setHoverWishlist(false)}
-                    >
-                        <img src={hoverWishlist ? wishlistIconHover : wishlistIcon} alt="Wishlist" />
-                    </Link>
 
                     <Link
                         to="/cart"

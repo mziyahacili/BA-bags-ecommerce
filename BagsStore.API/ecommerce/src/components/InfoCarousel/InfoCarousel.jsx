@@ -3,11 +3,10 @@ import Slider from 'react-slick';
 import './InfoCarousel.css';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import image1 from '../Assets/Inside/inside-carousel1.jpg'
-import image2 from '../Assets/Inside/inside-carousel2.jpg'
-import image3 from '../Assets/Inside/inside-carousel3.jpg'
-import image4 from '../Assets/Inside/inside-carousel4.jpg'
-
+import image1 from '../Assets/Inside/inside-carousel1.jpg';
+import image2 from '../Assets/Inside/inside-carousel2.jpg';
+import image3 from '../Assets/Inside/inside-carousel3.jpg';
+import image4 from '../Assets/Inside/inside-carousel4.jpg';
 
 const carouselItems = [
   {
@@ -31,6 +30,7 @@ const carouselItems = [
     description: 'Surprise your beloved ones with a Babayeva Bags Gift Card. Let them discover the brand’s timeless elegance.'
   }
 ];
+
 export default function InfoCarousel() {
   const settings = {
     dots: true,
@@ -38,10 +38,13 @@ export default function InfoCarousel() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true, // Включить центрирование элементов
+    centerMode: true,
     centerPadding: '30px',
-    nextArrow: <div className="slick-next">→</div>,
-    prevArrow: <div className="slick-prev">←</div>
+    nextArrow: <div className="slick-next">→</div>, // Можно заменить на иконку
+    prevArrow: <div className="slick-prev">←</div>, // Можно заменить на иконку
+    customPaging: function(i) {
+      return <div className="custom-dot"></div>; // Кастомная точка
+    }
   };
 
   return (

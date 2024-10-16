@@ -142,3 +142,110 @@
   color: #9a6343;
   font-size: 10px;
 }
+
+.footer ul.open {
+  max-height: 500px; /* Установите достаточно большое значение для полного раскрытия */
+  transition: max-height 0.3s ease-in;
+}
+
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }                                                                          
+
+  .footer-links ul {
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .footer-links ul.open {
+    max-height: 300px;
+  }
+}
+/* @media (max-width: 1024px) {
+  .footer {
+    padding: 80px 50px 40px 50px;
+  }
+
+  .footer-container {
+    padding: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+
+  .footer-links div {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 30px 30px 30px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .footer-newsletter {
+    margin-right: 0;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links div {
+    margin-bottom: 20px;
+  }
+
+  .footer-bottom-container {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 40px 20px 20px 20px;
+  }
+
+  .footer-container {
+    padding: 20px;
+  }
+
+  .newsletter-form button {
+    font-size: 16px;
+  }
+
+  .footer-links {
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links div {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+} */

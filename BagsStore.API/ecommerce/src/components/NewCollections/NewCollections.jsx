@@ -15,9 +15,8 @@ export default function NewCollections() {
             id={item.id}
             name={item.name}
             image={item.image}
-            new_price={item.new_price}
+            new_price={item.new_price.toFixed(2)}
             imageHover={item.imageHover}
-            index={i} 
           />
         ))}
       </div>
