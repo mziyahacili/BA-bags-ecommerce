@@ -1,0 +1,149 @@
+/* 
+  .carousel-section {
+    text-align: center;
+    padding: 50px;
+    position: relative;
+  }
+  
+  .carousel-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-item {
+    text-align: left;
+    padding: 0 10px;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-item h3 {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+  }
+  
+  .carousel-item p {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .slick-arrow {
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: -25px;
+  }
+  
+  .slick-next {
+    right: -25px;
+  }
+  
+  .slick-arrow:before {
+    display: none;
+  }
+  
+  .slick-dots {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+  }
+  
+  .slick-dots li {
+    width: auto;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #333;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #b24823;
+  }
+  
+  .slick-dots-custom {
+    display: inline-block;
+    margin: 0 5px;
+    color: #333;
+  }
+   */
+
+   
+
+   .infocarousel-container {
+    background-color: #EEEAE5;
+    padding: 80px 220px 70px 220px;
+  }
+  
+  .infocarousel-container h2 {
+    margin-bottom: 20px;
+    margin-left: 11px;
+    font-size: 24px;
+    color: #4A4A4A;
+  }
+  
+  .infocarousel-item {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .infocarousel-item img {
+    width: 100%; /* Ширина картинки на всю ширину родительского элемента */
+    height: 500px; /* Задайте высоту по вашему усмотрению */
+    object-fit: cover; /* Обеспечивает сохранение пропорций и заполнение контейнера */
+    margin-bottom: 10px;
+  }
+  
+  .infocarousel-item h3 {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .infocarousel-item p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+ 
+
+  .slick-dots {
+    display: flex !important;
+    justify-content: center;
+    position: absolute;
+    bottom: -30px; /* Позиция точек */
+    width: 100%;
+  }
+  
+  .slick-dots li {
+    margin: 0 5px; /* Отступы между точками */
+  }
+  
+  .slick-dots li button {
+    display: none; /* Скрыть стандартные кнопки */
+  }
+  
+  /* Стиль точек */
+  .custom-dot {
+    width: 10px; /* Ширина точки */
+    height: 10px; /* Высота точки */
+    background-color: #d3d3d3; /* Цвет неактивной точки */
+    border-radius: 50%; /* Круглая форма */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Плавные переходы */
+  }
+  
+  /* Стиль активной точки */
+  .slick-dots li.slick-active .custom-dot {
+    background-color: #9a6343; /* Цвет активной точки */
+    transform: scale(1.2); /* Увеличение активной точки */
+  }
+  

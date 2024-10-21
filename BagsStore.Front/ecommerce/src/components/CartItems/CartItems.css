@@ -1,0 +1,122 @@
+.cart-container {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет карточкам переноситься на следующую строку */
+    gap: 5rem;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.cart-item {
+    display: flex;
+    flex-direction: row; /* Изменяем ориентацию на горизонтальную */
+    border-bottom: 1px solid #dcdcdc;
+    padding: 1rem; /* Увеличиваем отступы, чтобы добавить пространство */
+    width: 100%; /* На мобильных устройствах карточка занимает всю ширину */
+    max-width: 550px; /* Максимальная ширина карточки */
+    margin: 0 auto;
+}
+
+.product-image {
+    flex: 0 0 auto; /* Изображение занимает фиксированное место */
+    width: 200px; /* Задайте ширину изображения */
+}
+
+.product-image img {
+    width: 100%; /* Изображение занимает всю ширину контейнера */
+    height: auto;
+    object-fit: cover;
+    align-items: center;
+}
+
+.product-details-cart{
+    display: flex;
+    flex-direction: column; /* Держим детали в вертикальном расположении */
+    padding-left: 1rem; /* Добавим немного отступа между изображением и деталями */
+    flex: 1; /* Позволяет этому блоку занимать оставшееся пространство */
+    margin-top: 7px;
+}
+
+.product-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-header h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.remove-btn img {
+    width: 20px;
+    cursor: pointer;
+}
+
+.product-material {
+    font-size: 0.8rem;
+    color: #b57b7b;
+    margin: 10px 0;
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0;
+}
+
+.product-options {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.product-color {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-size {
+    font-size: 1rem;
+    color: #333;
+}
+
+.product-link {
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #ad7d7d;
+    text-decoration: none;
+}
+
+.product-link span {
+    text-decoration: underline;
+}
+
+.product-link:hover {
+    color: #842222;
+}
+
+@media (max-width: 768px) {
+    .cart-container {
+        justify-content: center;
+    }
+
+    .cart-item {
+        width: 100%; /* На мобильных устройствах карточка занимает всю ширину */
+    }
+
+    .product-header h2 {
+        font-size: 1.3rem;
+    }
+
+    .product-price {
+        font-size: 1.1rem;
+    }
+}

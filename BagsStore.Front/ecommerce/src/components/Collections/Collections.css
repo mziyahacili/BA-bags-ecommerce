@@ -1,0 +1,21 @@
+/* Collections.css */
+.collections-items {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 50px 40px 0px;
+    background-color: #F7F5F1; /* Adjust background color as needed */
+}
+  
+.collection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 150px;
+}
+
+
+.collection h1{
+  font-size: 30px;
+  color: #4a4a4a;
+}

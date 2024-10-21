@@ -1,0 +1,123 @@
+.shop-category {
+  margin-top: 26px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.shopcategory-header h1 {
+  font-size: 1.5em;
+  font-weight: 400;
+  color: #121010;
+}
+
+.shopcategory-indexSort {
+  margin: 84px auto 80px;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 110px;
+  border-top: 1px solid rgba(195, 176, 165, .3);;
+  border-bottom: 1px solid rgba(195, 176, 165, .3);;
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
+.shopcategory-sort-icon{
+  color: #B57841;
+}
+
+.shopcategory-indexSort p{
+  color: #5B5A57;
+}
+
+.shopcategory-sort {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: #B57841;
+}
+
+.shopcategory-sort img {
+  margin-left: 10px;
+}
+
+.shopcategory-indexSort p span {
+  font-weight: 600;
+}
+
+.shopcategory-products {
+  margin: 20px 170px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.shopcategory-loadmore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  width: 233px;
+  height: 69px;
+  border-radius: 75px;
+  background: #ededed;
+  color: #787878;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shopcategory-sort span{
+  color: #B57841;
+}
+
+
+.shopcategory-loadmore:hover {
+  background-color: #dcdcdc;
+}
+
+
+
+.dropdown-menu {
+  position: absolute;
+  background-color: #f7f5f1;;
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, .05);
+  padding: 10px;
+  margin-top: 5px;
+  z-index: 100;
+  border-radius: 3px;
+}
+
+.dropdown-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu ul li {
+  padding: 8px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu ul li:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdown-menu ul li span {
+  color: #B57841;
+  font-size: 14px;
+}
+
+
+.checkmark {
+  color: #B57841;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 10px;
+  opacity: 0.8;
+}
